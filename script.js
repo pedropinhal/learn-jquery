@@ -11,10 +11,32 @@
     // document ready
     $(function () {
 
-        $("#toggleLink").click(function(){
-            $("p").not(".important").toggle();
+        $("#taskText").keydown(function(e){
+            if(e.keyCode == 13){
+                addTask($(this), e);
+            }
         });
 
+        $("#submit").click(function(e){
+            addTask($("#taskText"), e);
+        });
+
+        $("#tasks li").on("click", function(){
+            var task = $(this);
+            if(task.hasClass("done")){
+                task.fadeOut("slow", function(){
+                    task.remove();
+                });
+            }else
+                task.addClass("done");
+        } );
 
     });
+
+    function addTask(textBox, event){
+        $("#tasks").append($("<li>").text(textBox.val()));
+        event.preventDefault();
+        textBox.val("");
+    }
+
 } (jQuery));

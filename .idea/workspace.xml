@@ -23,7 +23,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="-6.8076925">
+            <state line="5" column="26" selection-start="136" selection-end="136" vertical-scroll-proportion="-3.2692308">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -32,7 +41,7 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="25" selection-start="328" selection-end="328" vertical-scroll-proportion="0.38202247">
+            <state line="20" column="39" selection-start="480" selection-end="480" vertical-scroll-proportion="0.19101124">
               <folding>
                 <element signature="e#0#158#0" expanded="false" />
               </folding>
@@ -51,6 +60,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/script.js" />
       </list>
     </option>
@@ -297,14 +307,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="-6.8076925">
+        <state line="5" column="26" selection-start="136" selection-end="136" vertical-scroll-proportion="-3.2692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="328" selection-end="328" vertical-scroll-proportion="0.38202247">
+        <state line="20" column="39" selection-start="480" selection-end="480" vertical-scroll-proportion="0.19101124">
           <folding>
             <element signature="e#0#158#0" expanded="false" />
           </folding>
