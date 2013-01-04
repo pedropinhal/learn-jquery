@@ -10,11 +10,11 @@
 
     // document ready
     $(function () {
-        $("#showLink").click(function(){
-            $("#text").show();
+
+        $("#toggleLink").click(function(){
+            $("p").not(".important").toggle();
         });
-        $("#hideLink").click(function(){
-            $("#text").hide();
-        });
+
+
     });
 } (jQuery));
