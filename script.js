@@ -21,7 +21,7 @@
             addTask($("#taskText"), e);
         });
 
-        $("#tasks li").live("click", function(){
+        $(document).on("click","#tasks li" , function(){
             var task = $(this);
             if(task.hasClass("done")){
                 task.fadeOut("slow", function(){
@@ -31,11 +31,12 @@
                 task.addClass("done");
         } );
 
+
     });
 
-    function addTask(textBox, event){
+    function addTask(textBox, e){
         $("#tasks").append($("<li>").text(textBox.val()));
-        event.preventDefault();
+        e.preventDefault();
         textBox.val("");
     }
 
