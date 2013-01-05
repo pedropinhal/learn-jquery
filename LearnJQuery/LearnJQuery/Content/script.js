@@ -31,10 +31,7 @@
                 task.addClass("done");
         } );
 
-        $("#ajax").click(function(){
-            $(this).load("testDoc.html");
-        });
-
+     
 
     });
 

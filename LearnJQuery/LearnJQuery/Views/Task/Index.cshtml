@@ -1,4 +1,5 @@
-﻿@model dynamic
+﻿@using LearnJQuery.Controllers
+@model LearnJQuery.Controllers.TaskRepository
 
 @{
     ViewBag.Title = "title";
@@ -7,5 +8,14 @@
 
 <h2>title</h2>
 <ul id="tasks">
+    @foreach (jTask task in Model.Tasks){
+        <li>@task.Name</li>
+    }
 </ul>
 <input type="text" id="taskText"><input id="submit" type="submit">
+
+@using (Html.BeginForm("AddTask", "Task"))
+{
+    <input type="text" name="task"/>
+    <input type="submit"/>
+}
