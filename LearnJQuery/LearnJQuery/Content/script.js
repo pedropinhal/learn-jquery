@@ -18,7 +18,8 @@
         });
 
         $("#submit").click(function(e){
-            addTask($("#taskText"), e);
+            addTask($("#taskText").val(), e);
+            
         });
 
         $(document).on("click","#tasks li" , function(){
@@ -31,14 +32,25 @@
                 task.addClass("done");
         } );
 
-     
+        $("#AddTaskSubmit").click(function (e) {
+            $.ajax({
+                type: "POST",
+                url: "/Task/AddTask",
+                data: $("#AddTaskForm").serialize(),
+                success: function(data) {
+                    addTask(data);
+                }
+            });
+            e.preventDefault();
+        });
+
 
     });
 
-    function addTask(textBox, e){
-        $("#tasks").append($("<li>").text(textBox.val()));
+    function addTask(task, e){
+        $("#tasks").append($("<li>").text(task));
         e.preventDefault();
-        textBox.val("");
+        
     }
 
 } (jQuery));

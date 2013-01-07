@@ -13,13 +13,16 @@ namespace LearnJQuery.Controllers
             var repo = Session["Tasks"] as TaskRepository;
             return View(repo);
         }
-
+        [HttpPost]
         public ActionResult AddTask(string task)
         {
-
             var repo = Session["Tasks"] as TaskRepository;
             repo.AddTask(task);
             Session["Tasks"] = repo;
+            if (Request.IsAjaxRequest())
+            {
+                return Content(task);
+            }
             return RedirectToAction("Index");
         }
 

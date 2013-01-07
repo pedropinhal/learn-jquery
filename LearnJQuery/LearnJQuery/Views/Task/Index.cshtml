@@ -8,14 +8,15 @@
 
 <h2>title</h2>
 <ul id="tasks">
-    @foreach (jTask task in Model.Tasks){
+    @foreach (jTask task in Model.Tasks)
+    {
         <li>@task.Name</li>
     }
 </ul>
-<input type="text" id="taskText"><input id="submit" type="submit">
+<input type="text" id="taskText"><input id="submit" type="submit" value="using clientside">
 
-@using (Html.BeginForm("AddTask", "Task"))
-{
-    <input type="text" name="task"/>
-    <input type="submit"/>
-}
+<form id="AddTaskForm">
+    <input type="text" name="task" />
+    <input type="submit" id="AddTaskSubmit" value="full page post" />
+</form>
+
