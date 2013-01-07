@@ -18,14 +18,16 @@
                 className = "done";
             }
 
-            <li class="@className" id="taskId-@task.Id">@task.Name</li>
+        <li class="@className" id="taskId-@task.Id">@task.Name</li>
         }
     }
 </ul>
 <input type="text" id="taskText"><input id="submit" type="submit" value="using clientside">
-
-<form id="AddTaskForm">
-    <input type="text" name="Name" />
-    <input type="submit" id="AddTaskSubmit" value="ajax post" />
-</form>
+<a href="#" id="openTask">Add task</a>
+<div id="dialog" style="display:none;">
+    <form id="AddTaskForm">
+        <input type="text" name="Name" />
+        <input type="submit" id="AddTaskSubmit" value="ajax post" />
+    </form>
+</div>
 

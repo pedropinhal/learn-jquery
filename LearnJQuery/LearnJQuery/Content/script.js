@@ -11,24 +11,24 @@
     // document ready
     $(function () {
 
-        $("#taskText").keydown(function(e){
-            if(e.keyCode == 13){
+        $("#taskText").keydown(function (e) {
+            if (e.keyCode == 13) {
                 addTask($(this));
                 e.preventDefault();
             }
         });
 
-        $("#submit").click(function(e){
+        $("#submit").click(function (e) {
             addTask($("#taskText").val());
             e.preventDefault();
-            
+
         });
 
-        $(document).on("click","#tasks li" , function(){
+        $(document).on("click", "#tasks li", function () {
             var task = $(this);
             var taskId = task.attr("id").substring(7);
             if (task.hasClass("done")) {
-                task.fadeOut("slow", function() {
+                task.fadeOut("slow", function () {
                     console.log(taskId);
                     $.ajax({
                         type: "POST",
@@ -46,15 +46,15 @@
                     type: "POST",
                     url: "/Task/CompleteTask",
                     data: { "taskId": taskId },
-                    success: function() {
+                    success: function () {
                         task.addClass("done");
                     }
-                        
+
                 }, "json");
-            
+
             }
-                
-        } );
+
+        });
 
         $("#AddTaskSubmit").click(function (e) {
             $.ajax({
@@ -68,14 +68,27 @@
             e.preventDefault();
         });
 
+        $("#dialog").dialog({
+            title: "Add task",
+            autoOpen: false,
+            modal: true
+        });
+
+        $("#openTask").click(function (e) {
+            e.preventDefault();
+            $("#dialog").dialog("open");
+            
+        });
+
+        $("#tasks").sortable();
 
     });
 
-    function addTask(task){
+    function addTask(task) {
         $("#tasks")
             .append($("<li>")
             .attr("id", "taskId-" + task.Id)
             .text(task.Name));
     }
 
-} (jQuery));
+}(jQuery));
