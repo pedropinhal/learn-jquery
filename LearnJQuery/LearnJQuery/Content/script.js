@@ -82,6 +82,22 @@
 
         $("#tasks").sortable();
 
+        $("#validateForm").validate({
+            rules: {
+                username: {
+                    remote: "http://localhost:49345/Validation/ValidateUsername"
+                },
+                password: {
+                    minlength: 8
+                }
+            },
+            messages: {
+                username: {
+                    remote: "Unique usernames!"
+                }
+            }
+        });
+
     });
 
     function addTask(task) {

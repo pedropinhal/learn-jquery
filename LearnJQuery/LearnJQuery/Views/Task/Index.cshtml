@@ -1,5 +1,5 @@
 ﻿@using LearnJQuery.Controllers
-@model LearnJQuery.Controllers.TaskRepository
+@model TaskRepository
 
 @{
     ViewBag.Title = "title";
@@ -31,3 +31,11 @@
     </form>
 </div>
 
+<form id="validateForm">
+    <label>username</label> <input type="text" name="username" class="required"/> <span>required, must be unique</span><br/>
+    Email <input type="text" class="required email"/> <span>required, valid email</span><br/>
+    Password <input type="password" name="password" class="required"/> <span>required, 8 chars</span>
+
+    <input type="submit"/>
+    
+</form>
