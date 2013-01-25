@@ -1,4 +1,0 @@
-learn-jquery
-============
-
-Learning JQuery
