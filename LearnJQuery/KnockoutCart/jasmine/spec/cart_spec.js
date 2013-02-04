@@ -29,6 +29,14 @@ describe("Cart", function(){
             expect(cart.findBySku("item").sku).toEqual("item");
         });
 
+        it("finds by sku", function(){
+            cart.addItem({sku: "item"});
+            cart.addItem({sku: "item"});
+            cart.removeItem("item");
+            expect(cart.itemCount()).toEqual(0);
+        });
+
+
     });
 
 });

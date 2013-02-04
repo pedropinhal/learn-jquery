@@ -18,7 +18,7 @@ pedStore.CartItem = function(item){
 
 pedStore.Cart = function(){
     var self = this;
-    var items = [];
+    self.items = ko.observableArray([]);
 
     self.addItem = function(item){
         var existing = self.findBySku(item.sku);
@@ -33,18 +33,25 @@ pedStore.Cart = function(){
     };
 
     self.itemCount = function(){
-        return self.items.length;
+        return self.items().length;
     };
 
     self.empty = function(){
-
-        self.items = [];
+        self.items.removeAll();
     };
 
     self.findBySku = function(sku){
-        return ko.utils.arrayFirst(self.items, function(item){
+        return ko.utils.arrayFirst(self.items(), function(item){
             return item.sku === sku;
         });
+    };
+
+    self.removeItem = function(sku){
+        var item = self.findBySku(sku);
+        if(item){
+            self.items.remove(item);
+        }
+
 
     };
 

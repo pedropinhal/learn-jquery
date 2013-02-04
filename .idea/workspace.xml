@@ -23,7 +23,7 @@
       <file leaf-file-name="learnJS.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LearnJQuery/LearnJQuery/Content/learnJS.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0">
+            <state line="41" column="0" selection-start="793" selection-end="793" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -47,10 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart_spec.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="cart_spec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LearnJQuery/KnockoutCart/jasmine/spec/cart_spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="33" selection-start="782" selection-end="782" vertical-scroll-proportion="0.53149605">
+            <state line="36" column="11" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -83,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="cart.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LearnJQuery/KnockoutCart/cart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="33" selection-start="770" selection-end="770" vertical-scroll-proportion="0.0">
+            <state line="15" column="0" selection-start="335" selection-end="335" vertical-scroll-proportion="0.14809783">
               <folding>
                 <element signature="e#0#156#0" expanded="false" />
               </folding>
@@ -115,8 +115,8 @@
         <option value="$PROJECT_DIR$/LearnJQuery/LearnJQuery/Content/cart.html" />
         <option value="$PROJECT_DIR$/LearnJQuery/LearnJQuery/Content/cart.js" />
         <option value="$PROJECT_DIR$/LearnJQuery/KnockoutCart/jasmine/SpecRunner.html" />
-        <option value="$PROJECT_DIR$/LearnJQuery/KnockoutCart/cart.js" />
         <option value="$PROJECT_DIR$/LearnJQuery/KnockoutCart/jasmine/spec/cart_spec.js" />
+        <option value="$PROJECT_DIR$/LearnJQuery/KnockoutCart/cart.js" />
       </list>
     </option>
   </component>
@@ -533,13 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LearnJQuery/LearnJQuery/Content/learnJS.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LearnJQuery/KnockoutCart/jasmine/SpecRunner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="97" selection-start="585" selection-end="585" vertical-scroll-proportion="-4.375">
@@ -547,19 +540,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LearnJQuery/KnockoutCart/cart.js">
+    <entry file="file://$PROJECT_DIR$/LearnJQuery/LearnJQuery/Content/learnJS.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="33" selection-start="770" selection-end="770" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#156#0" expanded="false" />
-          </folding>
+        <state line="41" column="0" selection-start="793" selection-end="793" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LearnJQuery/KnockoutCart/jasmine/spec/cart_spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="33" selection-start="782" selection-end="782" vertical-scroll-proportion="0.53149605">
+        <state line="36" column="11" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearnJQuery/KnockoutCart/cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="335" selection-end="335" vertical-scroll-proportion="0.14809783">
+          <folding>
+            <element signature="e#0#156#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
