@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Knockout Cart</title>
-    <script type="text/javascript" src="../LearnJQuery/Content/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="cart.js"></script>
+	<title>Knockout Cart</title>
 </head>
 <body>
+	<div>
+		<a href="#" id="addToCart" data-bind ="click: addItemClicked" data-sku="lego">Add To Cart</a>
+	</div>
+	
+	<div id="cart">
+		<ul>
+			<!-- ko foreach:items -->
+			<li data-bind="text:sku"></li>
+			<!-- /ko -->
+		</ul>
+	</div>
 
-<div>
-    <button>Add To Cart</button>
-    <div id="cart"></div>
-</div>
-
+	<script type="text/javascript" src="../LearnJQuery/Content/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="cart.js"></script>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			cart = new pedStore.Cart();
+			ko.applyBindings(cart);
+		})
+	</script>
 </body>
 </html>

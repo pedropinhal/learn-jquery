@@ -1,6 +1,10 @@
 describe("Cart", function(){
 
-    var cart = new pedStore.Cart();
+		cart = {};
+		
+    beforeEach(function () {
+    	cart = new pedStore.Cart();
+    });
 
     it("exists", function(){
         expect(cart).toBeDefined();

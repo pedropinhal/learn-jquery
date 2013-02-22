@@ -20,6 +20,13 @@ pedStore.Cart = function(){
     var self = this;
     self.items = ko.observableArray([]);
 
+    self.addItemClicked = function (data, ev) {
+    	var sku = $(ev.currentTarget).data("sku");
+
+    	if (sku) {
+    		self.addItem({ sku: sku });
+    	}
+    };
     self.addItem = function(item){
         var existing = self.findBySku(item.sku);
         if(existing){
@@ -51,9 +58,11 @@ pedStore.Cart = function(){
         if(item){
             self.items.remove(item);
         }
-
-
     };
+
+    self.items.subscribe(function (items) {
+    	localStorage.setItem("pedCart", JSON.stringify(items));
+    });
 
 
     return self;
